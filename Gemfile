@@ -49,6 +49,8 @@ gem 'nokogiri', '>= 1.6.2.beta'
 group :test, :development do
 	gem 'rspec-rails', "~> 2.14.1"
 end
+
 group :test do
 	gem 'capybara', "2.2.1"
+	gem 'factory_girl_rails', '~> 4.2.1'
 end
