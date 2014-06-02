@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
 			flash[:notice] = "Signed in successfully."
 			redirect_to root_url
 		else
-			flash[:error] = "Sorry."
+			flash[:error] = "Sorry ." 
 			render :new
 		end
 	end
