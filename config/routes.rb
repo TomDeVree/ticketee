@@ -10,6 +10,7 @@ Ticketee::Application.routes.draw do
 	post "/signin", to: "sessions#create"
 	
 	namespace :admin do
+		root :to => "base#index"
 		resources :users
 	end
   # The priority is based upon order of creation: first created -> highest priority.
