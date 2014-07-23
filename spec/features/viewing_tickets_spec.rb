@@ -11,6 +11,9 @@ feature "Viewing tickets" do
 			title: "Standards compliance",
 			description: "Isn't a joke.")
 		visit '/'
+		define_permission!(user, "view", textmate_2)
+		define_permission!(user, "view", internet_explorer)
+		sign_in_as!(user)
 	end
 	
 	scenario "Viewing tickets for a given project" do
